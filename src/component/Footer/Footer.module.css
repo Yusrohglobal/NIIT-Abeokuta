@@ -1,0 +1,114 @@
+.container{
+    width: 100%;
+    background: url(../../Assests/mapBg.png);
+    background-color: rgba(60, 59, 59, 1);
+    background-repeat: no-repeat;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    background-position: center;
+    background-blend-mode: color;
+}
+
+footer{
+    width: 90%;
+    margin: auto;
+    color: white;
+}
+
+.footWrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.footRight{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-top: 2rem;
+}
+.footLeft{
+    width: 30%;
+}
+.footLeft p{
+    font-family: Lato;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+padding-top: 1rem;
+width: 70%;
+}
+.Subscribe{
+    width: 20%;
+    margin-top: 2rem;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.Info h5{
+    font-family: Lato;
+font-size: 20px;
+font-weight: 700;
+line-height: 24px;
+padding-bottom: 1rem;
+}
+.Info p{
+    font-family: Lato;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+padding-bottom: 1rem;
+}
+.Subscribe h5{
+    font-family: Lato;
+font-size: 20px;
+font-weight: 700;
+line-height: 24px;
+padding-bottom: 1rem;
+}
+form input{
+    font-family: Lato;
+    width: 80%;
+    border: none;
+    background: rgba(244, 245, 247, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 1rem;
+    border-radius: 5px 0px 0px 5px;
+    color: rgba(130, 130, 130, 1);
+    padding: 0.5rem;
+}
+form button{
+    width: 20%;
+    background: rgba(14, 57, 151,1);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+}
+form{
+    align-items: center;
+}
+.copyright{
+    text-align:  center;
+    margin-top: 4rem;
+}
+.copyright p{
+    font-family: Lato;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.2px;
+padding-top: 1rem;
+}
+.copyright hr{
+    width: 22%;
+    margin: auto;
+}

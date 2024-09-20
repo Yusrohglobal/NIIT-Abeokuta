@@ -1,0 +1,66 @@
+.container{
+    width: 100%;
+}
+
+.hero{
+    background: url(../../Assests/registerBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 3rem;
+}
+.hero h3{
+    font-family: Lato;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 38.09px;
+    color: rgba(14, 57, 151, 1);
+    margin-left: 4rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Register{
+    width: 50%;
+    margin:auto;
+    background-color: rgba(14, 57, 151, 0.03);
+    padding: 3rem 3rem 5rem 3rem;
+    margin-top: 8rem;
+    margin-bottom: 12rem;
+    border-radius: 10px;
+}
+
+.Register input{
+    width: 100%;
+    border : 1px solid rgba(14, 57, 151, 1); ;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.submit button{
+width: 100%;
+border: 1px solid rgba(14, 57, 151, 1);
+border-radius: 5px;
+cursor: pointer;
+background-color: rgba(14, 57, 151, 1);
+font-family: Lato;
+font-size: 16px;
+font-weight: 700;
+line-height: 19.2px;
+color: rgba(255, 255, 255, 1);
+letter-spacing: 0.15em;
+}
+.Register h3{
+    font-family: Lato;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 39.6px;
+    margin-bottom: 3rem;
+}
+
+.Register label{
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;    
+}

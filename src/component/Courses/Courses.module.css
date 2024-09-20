@@ -1,0 +1,95 @@
+.container {
+    width: 100%;
+    background: rgba(14, 57, 151, 1);
+    background-image: url(../../Assests/courseBack.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.innerContainer {
+    width: 80%;
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.topCourses {
+    text-align: center;
+}
+
+.topCourses h3 {
+    font-family: Lato;
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 38.09px;
+    color: #fff;
+
+}
+
+.topCourses p {
+    color: #fff;
+    font-family: Lato;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 26.55px;
+    padding: 1rem 0;
+}
+
+.topCourses hr{
+    width: 15%;
+    margin: auto;
+    border: 1px solid #fff;
+}
+
+
+.btn button{
+    padding: 0.7rem 3rem;
+    /* border-radius: 0px 5px 5px 0px; */
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.09px;
+    color: rgba(14, 57, 151, 1);
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 2rem 0.1rem;
+}
+
+.btn button:hover{
+    background: rgba(150, 218, 237, 1);
+    color: #fff;
+}
+
+.shortTerm{
+    border-radius: 5px 0px 0px 5px;
+}
+
+.longTerm{
+    border-radius: 0px 5px 5px 0px;
+}
+
+.cardWrap{
+    display: flex;
+    justify-content: space-between;
+    width: 86%;
+    margin: auto;
+}
+
+
+.butt{
+    text-align: center;
+}
+
+.butt button{
+    padding: 0.5rem 1rem;
+    border: 1px solid #fff;
+    background: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    font-family: Lato;
+    font-size: 16px;
+    margin-top: 5rem;
+}
+

@@ -1,0 +1,56 @@
+.container{
+    width: 100%;
+}
+
+.jobWrap{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.jobImage{
+    width: 30%;
+}
+.jobText{
+    width: 60%;
+}
+.jobText p{
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: left;
+    margin-bottom: 1rem;
+    color: rgba(51, 51, 51, 1);
+
+}
+.business{
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    background:rgba(14, 57, 151, 1) ;
+    padding: 2rem;
+    color: white;
+}
+
+.business h3{
+    font-family: Lato;
+    font-size: 28px;
+    padding-bottom: 1rem;
+    text-align: center;
+    line-height: 39.6px;
+    font-weight: 700;
+    color: white;
+}
+.business p{
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: white;
+    padding-top: 1rem;
+}
+

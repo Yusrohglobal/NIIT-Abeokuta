@@ -1,0 +1,62 @@
+.container{
+    width: 100%;
+    margin-top: 15rem;
+}
+.innerContainer{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -52rem;
+    position: absolute;
+    z-index: 2;
+    margin-left: 5rem;
+}
+.aboutText{
+    width:43%;
+    margin-top: 7rem;
+}
+.aboutText h5{
+    margin-top: 2rem;
+    font-family: Lato;
+font-size: 24px;
+font-weight: 600;
+line-height: 27.7px;
+letter-spacing: 0.01em;
+text-align: left;
+color: rgba(7, 37, 84, 1);
+}
+.aboutText p{
+    margin-top: 2rem;
+    font-family: Lato;
+font-size: 16px;
+font-weight: 400;
+line-height: 25.19px;
+letter-spacing: 0.01em;
+text-align: justified;
+color: rgba(7, 37, 84, 1);
+
+}
+.aboutText button{
+    font-family: Lato;
+color: white;
+background-color: rgba(14, 57, 151, 1);
+margin-top: 4rem;
+border: none;
+cursor: pointer;
+padding: 0.7rem 1.5rem;
+letter-spacing: 0.15em;
+font-size: 16px;
+line-height: 21.6px;
+font-weight: 400;
+border-radius: 5px;
+
+}
+.aboutImage img{
+    width: 100%;
+    
+}
+.aboutImage{
+    width: 40%;
+}

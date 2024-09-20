@@ -1,0 +1,43 @@
+.container{
+   width: 100%;
+}
+nav{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+li{
+    list-style-type: none;
+    cursor: pointer;
+    font-family: Lato;
+font-size: 16px;
+font-weight: 400;
+line-height: 18.47px;
+text-align: left;
+color: rgba(7, 37, 84, 1)
+}
+
+a{
+   text-decoration: none; 
+}
+
+nav button{
+    background: rgba(14, 57, 151, 1);
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+ font-family: Lato;
+ font-size: 1rem;
+ color: white;
+ border: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: irem 0;
+}
