@@ -1,5 +1,6 @@
 .container{
     width: 100%;
+    margin-top: 7rem;
 }
 
 .hero{
@@ -63,4 +64,35 @@ letter-spacing: 0.15em;
     font-size: 16px;
     font-weight: 500;
     line-height: 19.2px;    
+}
+
+@media screen and (max-width: 768px) {
+    .hero{
+        padding-top: 7rem;
+        background-size: contain;
+    }
+    .hero h3{
+        margin-left: 2rem;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+.hero{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    background-size: contain;
+}
+.hero h3{
+    margin-left: 2rem;
+}
+.Register{
+    width: 80%;
+}
+}
+
+.myRow{
+    color: blue;
+    font-family: Lato;
+    font-size: 16px;
 }

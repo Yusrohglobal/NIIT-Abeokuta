@@ -14,6 +14,9 @@
 .jobImage{
     width: 30%;
 }
+.jobImage img{
+    width: 100%;
+}
 .jobText{
     width: 60%;
 }
@@ -28,9 +31,8 @@
 
 }
 .business{
-    width: 70%;
+    width: 80%;
     margin: auto;
-    border-radius: 10px;
     background:rgba(14, 57, 151, 1) ;
     padding: 2rem;
     color: white;
@@ -44,13 +46,121 @@
     line-height: 39.6px;
     font-weight: 700;
     color: white;
+    width: 70%;
+    margin: auto;
 }
-.business p{
+.card p{
     font-family: Lato;
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
-    color: white;
+    color: rgba(14, 57, 151, 1) ;
     padding-top: 1rem;
 }
+.cardWrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    gap: 2rem;
+}
+.card{
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    height: 500px;
+}
 
+.award{
+    width: 80%;
+    margin: auto;
+    margin-top: 5rem;
+
+}
+.award h3{
+    width: 80%;
+    font-size: 28px;
+    font-weight: 700;
+    color: blue;
+    padding-bottom: 1rem;
+}
+
+.awardList li{
+    list-style-type: disc;
+    color: black;
+    font-size: 16px;
+    font-family: Lato;
+    border-bottom: 2px solid blue;
+}
+.talent{
+    width: 80%;
+    margin: auto;
+    margin-top: 5rem;
+    padding: 2rem;
+    box-shadow: 0px 4px 4px 0px  #00000040;
+    border-radius: 10px;
+    margin-bottom: 5rem;
+    border-top: 3px solid grey;
+}
+.talent p{
+font-family: Lato;
+font-size: 16px;
+font-weight: 500;
+line-height: 28.8px;
+text-align: center;
+
+}
+
+@media screen and (max-width: 768px) {
+    .jobWrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .jobImage{
+        width: 70%;
+        margin-bottom: 3rem;
+    }
+    .business h3{
+        width: 90%;
+        margin: auto;
+    }
+    .cardWrap{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .jobText{
+        width: 100%;
+    }
+    .business{
+        width: 90%;
+        padding: 1rem;
+    }
+    .card{
+        height: 350px;
+        padding: 1rem;
+    }
+    .talent p{
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 28.8px;
+        text-align: center;
+        
+        }
+}
+
+@media screen and (max-width: 426px) {
+    .card{
+        height: 600px;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .card{
+        height: 700px;
+        padding: 1rem;
+    }
+}

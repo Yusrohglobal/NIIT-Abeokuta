@@ -1,9 +1,12 @@
 .container{
    width: 100%;
+   position: fixed;
+   z-index: 8;
+   background-color: white;
 }
 nav{
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -14,7 +17,7 @@ li{
     font-family: Lato;
 font-size: 16px;
 font-weight: 400;
-line-height: 18.47px;
+/* line-height: 18.47px; */
 text-align: left;
 color: rgba(7, 37, 84, 1)
 }
@@ -39,5 +42,61 @@ header{
     align-items: center;
     width: 90%;
     margin: auto;
-    padding: irem 0;
+    padding: 1rem 0;
 }
+.hamburger{
+    display: none;
+}
+
+.mobileMenu{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    justify-content: space-between;
+    top: -100vh;
+    left: 0;
+    background-color: white;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.active{
+    top: 80px;
+    display: none;
+    flex-direction: column;
+    width: 40%;
+    font-size: 1rem;
+    position: absolute;
+    justify-content: space-between;
+    right: 0;
+    background-color: white;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.logo{
+    align-items: center;
+}
+.logo img{
+    width: 10%;
+}
+
+@media screen and (max-width: 850px) {
+    .hamburger{
+        display: block;
+    }
+    .navMenu{
+        display: none;
+    }
+    
+}
+
+/* @media screen and (max-width: 768px) {
+    .hamburger{
+        display: block;
+    }
+    .navMenu{
+        display: none;
+    }
+} */

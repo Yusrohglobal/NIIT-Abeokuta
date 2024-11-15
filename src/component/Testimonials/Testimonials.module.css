@@ -53,4 +53,38 @@
     line-height: 24px;
     color: rgba(52, 173, 254, 1);
 }
+.clientImage img{
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .wrap{
+        width: 60%;
+    }
+}
+
+@media  screen and (max-width: 768px) {
+.innerContainer{
+    width: 80%;
+}
+}
+
+@media  screen and (max-width: 426px) {
+    .innerContainer h2 {
+        margin-bottom: 2rem;
+    }
+    
+    .paragraph p {
+        width: 100%;
+        margin: auto;
+    }
+    .wrap{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin: auto;
+        gap: 0.5rem;
+        margin-top: 2rem;
+    }
+}
 

@@ -1,13 +1,52 @@
-import React from 'react'
+import React,  {useRef, useState} from 'react';
 import classes from "./Register.module.css";
+import emailjs from "@emailjs/browser";
+
+const Result = () => {
+  return <p>Your Application has been submitted successfully</p>
+};
+
 
 const Register = () => {
+  const [result, showResult] = useState(false, true);
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+    .sendForm(
+      "service_ry8yfzg",
+      "template_w6a3fis",
+      form.current,
+      "JwrpL52hIffJ2wiYB"
+    )
+    .then(
+      (result) => {
+        console.log(result.text);
+        console.log(
+          "Your Application has been submitted successfully"
+        );
+      },
+      (error) => {
+        console.log(error.text);
+        console.log("Message not sent");
+      }
+    );
+
+    form.current.reset();
+    showResult(true);
+  };
+  setTimeout(() => {
+    showResult(false);
+  }, 5000);
+
+
   return (
     <div className={classes.container}>
         <div className={classes.hero}>
         <h3>COURSE REGISTRATION</h3>
         </div>
-        <form div className={classes.Register}>
+        <form ref={form} onSubmit={sendEmail}  className={classes.Register}>
           <h3>Welcome to NIIT Abeokuta</h3>
           <label for="Full_name" >Full name</label><br/>
           <input type="text" id="Full_Name" name="Full_Name" placeholder='Please enter your full name' required/><br/>
@@ -33,10 +72,10 @@ const Register = () => {
           <div className={classes.submit}>
           <button>SUBMIT</button>
           </div>
-
+          <div className={classes.myRow}>{result ? <Result /> : null} </div>
           </form>
     </div>
-  )
-}
+  );
+};
 
 export default Register

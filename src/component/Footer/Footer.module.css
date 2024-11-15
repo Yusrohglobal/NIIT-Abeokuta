@@ -29,6 +29,10 @@ footer{
 .footLeft{
     width: 30%;
 }
+.footLeft img{
+    width: 20%;
+    filter: contrast(0%) brightness(2);
+}
 .footLeft p{
     font-family: Lato;
 font-size: 16px;
@@ -46,6 +50,9 @@ width: 70%;
     align-items: center;
     gap: 1rem;
     margin-top: 2rem;
+}
+.media img{
+    width: 80%;
 }
 .Info h5{
     font-family: Lato;
@@ -111,4 +118,48 @@ padding-top: 1rem;
 .copyright hr{
     width: 22%;
     margin: auto;
+}
+
+@media  screen and (max-width: 768px) {
+    .footWrap{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+    .footRight{
+        width: 80%;
+    }
+    .footLeft{
+        width: 70%;
+    }
+    .footLeft p{
+    width: 70%;
+    }
+    .Subscribe{
+        width: 60%;
+    }
+    .copyright hr{
+        width: 100%;
+    }
+}
+
+@media  screen and (max-width: 426px) {
+    .footRight{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .footLeft{
+        width: 100%;
+    }
+    .Subscribe{
+        width: 100%;
+    }
+    .footLeft p{
+        width: 100%;
+    }
+    .Info{
+        margin-bottom: 1rem;
+    }
 }

@@ -1,31 +1,31 @@
 import React from 'react'
-import classes from "./Courses.module.css";
-import Student from "../../Assests/python.png";
+import classes from ".//examProps.module.css";
+// import Student from "../../Assests/python.png";
 import Student2 from "../../Assests/digital.png";
 import Student3 from "../../Assests/web.png";
 import  {Link} from "react-router-dom";
 
-const Courses = () => {
+const examProps = (props) => {
   return (
     <div className={classes.container}>
       <div className={classes.innerContainer}>
         <div className={classes.topCourses}>
-          <h3>POPULAR PROGRAMMES</h3>
-          <p>Elevate your skills with our most in-demand programmes</p>
+          <h3>{props.popular}</h3>
+          <p>{props.skill}</p>
           <div className={classes.line}>
             <hr />
           </div>
           <div className={classes.btn}>
-            <button className={classes.shortTerm}>SHORT TERM COURSE</button>
-            <button className={classes.longTerm}>LONG TERM COURSE</button>
+            <button className={classes.shortTerm}>{props.stc}</button>
+            <button className={classes.longTerm}>{props.ltc}</button>
           </div>
         </div>
         <div className={classes.cardWrap}>
             <div className={classes.card}>
               <div className={classes.cardImage}>
-                <img src={Student} alt="Student"  className={classes.myImage}/>
+                <img src={props.Student} alt="Student"  className={classes.myImage}/>
               <div className={classes.cardText}>
-                <h3>PYTHON PROGRAMMING</h3>
+                <h3>{props.biology}</h3>
                 <hr/>
                 <p>Duration: 3 Months Certification: NIIT Fee: ₦100,000</p>
                 <Link to="/register">
@@ -69,4 +69,4 @@ const Courses = () => {
   )
 }
 
-export default Courses
+export default examProps

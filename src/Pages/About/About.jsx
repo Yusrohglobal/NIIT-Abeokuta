@@ -1,6 +1,7 @@
 import React from 'react'
 import Hero from "../../component/aboutHero/aboutHero";
 import Job from "../../component/aboutJob/aboutJob";
+// import Course from "../../component/courseAbout/courseAbout"
 
 
 const About = () => {
@@ -8,6 +9,7 @@ const About = () => {
     <div>
         <Hero/>
         <Job/>
+        {/* <Course/> */}
     </div>
   )
 }

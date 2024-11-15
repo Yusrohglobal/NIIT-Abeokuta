@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from "./Footer.module.css";
-import Logo from "../../Assests/niitLogo.png";
+import niitLogo from "../../Assests/NIIT Logo.png"
+import itcore from "../../Assests/IT CORE LOGO.png"
 import Facebook from "../../Assests/Facebook.png";
 import Twitter from "../../Assests/Twitter.png";
 import Instagram from "../../Assests/Instagram.png";
@@ -9,6 +10,7 @@ import Likedln from "../../Assests/Likedln.png";
 import { TiLocation } from "react-icons/ti";
 import { IoCall } from "react-icons/io5";
 import { PiPaperPlaneTiltFill } from "react-icons/pi";
+import {Link} from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -17,7 +19,10 @@ const Footer = () => {
       <hr />
       <div className={classes.footWrap}>
           <div className={classes.footLeft}>
-            <img src={Logo} alt="Logo" />
+            <Link to="/">
+            <img src={niitLogo} alt="niitLogo" />
+            <img src={itcore} alt="itcore"/>
+            </Link>
             <p>NIIT Agbara, Suite E, Agbara Estate shopping Mall, Beside Stanbic IBTC Beach Town, Agbara.</p>
             <p><TiLocation />Beach Town, Agbara</p>
             <p><IoCall />08094355000, 08094355003</p>

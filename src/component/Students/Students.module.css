@@ -29,6 +29,12 @@
     display: flex;
     gap: 3rem;
 }
+.part1{
+    width: 10%;
+}
+.part2{
+    width: 90%;
+}
 
 .part1 hr{
     height: 30px;
@@ -76,4 +82,39 @@
     border: 2px solid rgba(14, 57, 151, 1);
     margin-left: 5rem;
     letter-spacing: 2px;
+}
+.studentImage img{
+    width: 100%;
+}
+@media screen and (max-width: 1024px) {
+    .part2{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .studentWrap{
+        flex-direction: column;
+        display: flex;
+        margin-top: 3rem;
+    }
+
+    .studentText{
+        width: 85%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+    .part2{
+        width: 100%;
+    }
+    .part{
+        gap: 1rem;
+    }
+    .studentButton button{
+        margin-left: 0rem;
+    }
+    .studentButton{
+        text-align: center;
+        margin-top: 2rem;
+    }
 }
